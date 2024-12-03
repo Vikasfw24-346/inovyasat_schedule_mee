@@ -2,6 +2,7 @@
 
 import  { DeviceSettings, useCall, VideoPreview } from '@stream-io/video-react-sdk'
 import React, { useEffect, useState } from 'react'
+import { Button } from './ui/button';
 
 const MeetingSetup = ({setIsSetupComplete}:{
     setIsSetupComplete: (value:boolean)=> void}) => {
@@ -40,12 +41,12 @@ const MeetingSetup = ({setIsSetupComplete}:{
             </label>
             <DeviceSettings/>
         </div>
-        <button className='rounded-md bg-green-500 px-4
+        <Button className='rounded-md bg-green-500 px-4
         py-2.5' onClick={()=>{
             call.join();
             setIsSetupComplete(true);
             }}>
-            Join meeting</button>
+            Join meeting</Button>
     </div>
   )
 }
