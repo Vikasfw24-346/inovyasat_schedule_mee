@@ -7,7 +7,9 @@ const Loader = () => {
         src='/icons/loading-circle.svg'
         alt='Loading'
         width={50}
-        height={50}/>
+        height={50}
+        priority // Add this property to preload the image
+        />
     </div>
   )
 }

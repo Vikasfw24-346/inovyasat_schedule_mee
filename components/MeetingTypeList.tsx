@@ -81,7 +81,7 @@ const MeetingTypeList = () => {
                 description="Plan your meeting"
                 handleClick={() => setMeetingState
                     ('isScheduleMeeting')}
-                className="bg-blue-1" />
+                className="bg-blue-1 w-auto h-auto" />
 
 
             {/* <HomeCard
@@ -96,7 +96,7 @@ const MeetingTypeList = () => {
                 title="View Recordings"
                 description="Check out your recordings"
                 handleClick={() => router.push('/recordings')}
-                className="bg-purple-1" />
+                className="bg-purple-1 w-auto h-auto" />
 
 
             <HomeCard
@@ -105,7 +105,7 @@ const MeetingTypeList = () => {
                 description="Via invitation link"
                 handleClick={() => setMeetingState
                     ('isJoiningMeeting')}
-                className="bg-yellow-1"
+                className="bg-yellow-1 w-full h-auto"
             />
             {!callDetails ? (
                 <MeetingModal

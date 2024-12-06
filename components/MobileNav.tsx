@@ -63,6 +63,8 @@ const MobileNav = () => {
                                                 alt={link.label}
                                                 width={20}
                                                 height={20}
+                                                style={{ width: 'auto', height: 'auto' }}
+
                                             />
                                             <p className='font-semibold'>
                                                 {link.label}
