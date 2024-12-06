@@ -1,6 +1,8 @@
-import  Loader  from "@/components/Loader";
-import  MeetingRoom  from "@/components/MeetingRoom";
-import  MeetingSetup  from "@/components/MeetingSetup";
+"use client";
+
+import Loader from "@/components/Loader";
+import MeetingRoom from "@/components/MeetingRoom";
+import MeetingSetup from "@/components/MeetingSetup";
 import { useGetCallById } from "@/hook/useGetCallById";
 import { useUser } from "@clerk/nextjs";
 import { StreamCall, StreamTheme } from "@stream-io/video-react-sdk";
@@ -33,6 +35,7 @@ const Meeting = ({ params: { id } }: MeetingProps) => {
 };
 
 export default Meeting;
+
 
 
 
